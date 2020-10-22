@@ -26,20 +26,22 @@ if (numero < 1 || numero > 5) {
 }
 
 var numberPC = tiroPC(1, 5);
-console.log(numberPC);
+console.log(numberPC + ' tiro PC');
+console.log(numero + ' numero giocatore');
+console.log(scelta + ' scelta giocatore');
 
 var somma = numberPC + numero;
-console.log(somma);
+console.log(somma + ' somma valori');
 
 var result = pariDispari(somma);
+console.log(result);
 
-// console.log(result);
+if (scelta == result) {
+    console.log('Hai vinto! :)');
+} else if (scelta != result) {
+    console.log('Hai perso :(');
+}
 
-// if (scelta = 'pari') {
-//     console.log('Hai vinto!');
-// } else if (scelta = 'dispari') {
-//     console.log('Hai perso :(');
-// }
 
 
 
